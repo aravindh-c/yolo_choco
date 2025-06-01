@@ -12,7 +12,7 @@ st.markdown("Upload an image to detect candies using a trained YOLOv8 model.")
 
 # Load YOLOv8 model
 @st.cache_resource
-def load_model(path='runs/detect/train/weights/best.pt'):
+def load_model(path='best.pt'):
     return YOLO(path)
 
 model = load_model()
